@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fulan special</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    #text{
+        font-size: 48px;
+        position: relative;
+        top: 20vh;
+        /* left: 24%; */
+        text-align: center;
+    }
+    #main-container{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(14, 168, 229);
+    }
+    #img-1{
+        position: relative;
+        top: 22vh;
+        left: 37%;
+    }
+    .btn{
+        font-size: 30px;
+        width: 200px;
+        padding: 10px 0px;
+    }
+    #yes-m{
+        position: relative;
+    background-color: rgb(255, 0, 0);
+    top: 152px;
+    left: 219px;
+    }
+    #no-m{
+    position: relative;
+    background-color: red;
+    top: 153px;
+    left: 313px;
+    }
+    #note-btn{
+    font-size: 25px;
+    background-color: red;
+    width: auto;
+    padding: 10px;
+    position: absolute;
+    top: 70vh;
+}
+#note-pt{
+    font-size: 25px;
+    position: absolute;
+    top: 80vh;
+    text-align: center;
+    left: 26%;
+    display: none;
+}
+    
+</style>
+<body>
+    <div id="main-container">
+    <p id="text"> I love you Meri Jaan</p>
+     <img src="images/mob.gif" alt="dil ka feel tha yeha" id="img-1"/>
+     <img src="images/flower.gif" alt="dil ka feel tha yeha" id="img-1"/>
+     <button class="btn" id="note-btn" onclick="display()">Note</button>
+     <div id="note-pt">No is strictly prohibited in this ilaka</div>
+    </div>
+</body>
+
+</html>
+<script>
+    function display(){
+        document.getElementById("note-pt").style.display="block";
+    }
+</script>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fulan special</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    #mob{
+        display: none;
+    }
+    #text{
+        font-size: 48px;
+        position: relative;
+        top: 20vh;
+        /* left: 24%; */
+        text-align: center;
+    }
+    #main-container{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(14, 168, 229);
+    }
+    #img-1{
+        position: relative;
+        top: 11vh;
+        left: 39%;
+    }
+    .btn{
+        font-size: 30px;
+        
+        width: 200px;
+        padding: 10px 0px;
+    }
+    #yes-m{
+        position: relative;
+    background-color: rgb(255, 0, 0);
+    top: 152px;
+    left: 219px;
+    }
+    #no-m{
+    position: relative;
+    background-color: red;
+    top: 153px;
+    left: 313px;
+    }
+     @media(max-width:480px) {
+        #main-container{
+            display: none;
+        }
+        #mob{
+            text-align: center;
+            display: block;
+        }
+        body{
+            background-color:rgb(14, 168, 229);
+        }
+        
+    } 
+</style>
+<body>
+    <div id="mob">
+        <h1>sab phone me hi dekh legi kya re cahl lap me khol</h1>
+        <br>
+        <br>
+        <h1>abhi bhi padh hi rahi h re ja jaldi</h1>
+    </div>
+    <div id="main-container">
+    <p id="text"> Aacha fulan suno na tumse ek bat keahna tha</p>
+     <img src="images/f1.gif" alt="dil ka feel tha yeha" id="img-1"/>
+     <button class="btn" id="yes-m">बोल दे</button>
+     <a href="second.html"><button class="btn" id="no-m">नहीं</button></a>
+    </div>
+</body>
+</html>
+<script>
+    let no=document.getElementById("yes-m");
+    function change(){
+        let h=Math.floor(Math.random()*70)
+        let w=Math.floor(Math.random()*50)
+        no.style.left=`${h}%`;
+        no.style.top=`${w}vh`;
+        // no.style.display="none";
+    }
+    no.addEventListener("mouseover",change)
+</script>
